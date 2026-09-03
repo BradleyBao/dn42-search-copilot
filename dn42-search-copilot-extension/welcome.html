@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to DN42 Search Copilot</title>
+    <link rel="stylesheet" href="welcome.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">DN42 SEARCH COPILOT</p>
+      <h1>Search Google. Explore DN42 alongside it.</h1>
+      <p class="intro">The sidebar appears only on Google Search result pages with DN42 search results.</p>
+
+      <section>
+        <h2>Before you search</h2>
+        <b>Option A: Direct DN42 Network Access</b>
+        <ol>
+          <li>Connect this device to DN42.</li>
+          <li>Trust the certificate authority used by your DN42 search endpoint.</li>
+          <li>Set the endpoint in Settings if you use a search service other than Baaka.</li>
+        </ol>
+        <b>Option B: Web Proxy Gateway</b>
+        <ol>
+          <li>You can configure a DN42 Web Proxy Gateway in the extension settings.</li>
+          <li>You can use our public proxy gateway: https://proxy.dn42.tianyibrad.com/</li>
+        </ol>
+        <p><a target="_blank" href="https://doc.tianyibrad.com/en/documentation/dn42-search-copilot/get-started">Learn more</a></p>
+      </section>
+
+      <section>
+        <h2>Default endpoint</h2>
+        <code>https://baaka.dn42/search?q={query}</code>
+      </section>
+
+      <div class="actions">
+        <button id="open-settings" type="button">Open Settings</button>
+        <a href="https://www.google.com/search?q=dn42" target="_blank" rel="noreferrer">Try a Google search</a>
+      </div>
+    </main>
+    <script src="welcome.js"></script>
+  </body>
+</html>

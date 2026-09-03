@@ -1,1 +1,64 @@
-:root{font-family:system-ui,sans-serif;color:#17212b}main{max-width:620px;margin:72px auto}b{color:#28785a;font-size:12px;letter-spacing:1px}form{display:grid;gap:10px}label{margin-top:14px;font-weight:bold}input,select{min-height:42px;padding:8px;font:inherit;border:1px solid #aebcc4;border-radius:4px}p{color:#53646f}button{width:max-content;margin-top:18px;padding:10px 14px;color:#fff;background:#246c53;border:0;border-radius:4px;font:inherit}output{color:#246c53}
+:root {
+  color: #17212b;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 620px;
+  margin: 72px auto;
+}
+
+b {
+  color: #28785a;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+input,
+select {
+  min-height: 42px;
+  padding: 8px;
+  border: 1px solid #aebcc4;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-label input {
+  min-height: auto;
+  margin: 0;
+}
+
+p {
+  color: #53646f;
+}
+
+button {
+  width: max-content;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 4px;
+  background: #246c53;
+  color: #fff;
+  font: inherit;
+}
+
+output {
+  color: #246c53;
+}

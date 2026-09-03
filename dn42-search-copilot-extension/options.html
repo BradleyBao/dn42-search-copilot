@@ -1,1 +1,44 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><title>DN42 Search Copilot Settings</title><link rel="stylesheet" href="options.css"><main><b>DN42 SEARCH COPILOT</b><h1>Search settings</h1><form id="f"><label>DN42 search endpoint</label><input id="e" type="url" required><p>Use <code>{query}</code> for search words. Otherwise a <code>q</code> parameter is added.</p><label>Request timeout</label><select id="t"><option value="5000">5 seconds</option><option value="8000">8 seconds</option><option value="12000">12 seconds</option></select><button>Save settings</button><output></output></form><script src="options.js"></script></main></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DN42 Search Copilot Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <b>DN42 SEARCH COPILOT</b>
+      <h1>Search settings</h1>
+      <form id="settings-form">
+        <label for="endpoint">DN42 search endpoint</label>
+        <input id="endpoint" type="url" required>
+        <p>Use <code>{query}</code> for search words. Otherwise a <code>q</code> parameter is added.</p>
+
+        <label class="checkbox-label" for="proxy-enabled">
+          <input id="proxy-enabled" type="checkbox">
+          Use a web proxy for DN42 search requests
+        </label>
+
+        <label for="proxy-template">Proxy URL template</label>
+        <input id="proxy-template" type="url" disabled>
+        <p>Use <code>{url}</code> for the complete DN42 search URL. Example: <code>https://proxy.dn42.tianyibrad.com/{url}</code>. Chrome asks for access to the proxy origin when you save.</p>
+
+        <label for="timeout">Request timeout</label>
+        <select id="timeout">
+          <option value="5000">5 seconds</option>
+          <option value="8000">8 seconds</option>
+          <option value="12000">12 seconds</option>
+        </select>
+
+        <label class="checkbox-label" for="debug-enabled">
+          <input id="debug-enabled" type="checkbox">
+          Enable diagnostic logging
+        </label>
+
+        <button type="submit">Save settings</button>
+        <output></output>
+      </form>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
