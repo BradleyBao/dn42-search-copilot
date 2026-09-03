@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "author": "Tian Yi, Bao",
+  "homepage_url": "https://doc.tianyibrad.com/en/documentation/dn42-search-copilot",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.google.com/*",
+    "*://*.dn42/*"
+  ],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sidebar.css"],
+      "matches": ["https://www.google.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
