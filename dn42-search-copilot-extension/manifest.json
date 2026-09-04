@@ -7,6 +7,9 @@
   "version": "1.0.0",
   "default_locale": "en",
   "permissions": ["storage"],
+  "icons": {
+    "128": "icons/icon128.png"
+  },
   "host_permissions": [
     "https://www.google.com/*",
     "*://*.dn42/*"
